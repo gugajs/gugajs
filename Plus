@@ -73,7 +73,7 @@ echo -e "\033[1;31m \033[1;33m\033[0m"| lolcat
 echo ""
 echo -e "\033[1;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"| lolcat
 echo ""
-echo -ne "\033[1;36mINFORME SUA KEY:\033[1;37m "| lolcat read _key_
+echo -ne "\033[1;36mINFORME SUA KEY:\033[1;37m "| lolcat  read _key_
 if [[ -z $_key_ ]]; then
 echo ""
 echo -e "\033[1;31m KEY INVALIDA\033[1;32m"
