@@ -54,7 +54,7 @@ system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo ""
 echo -e "\033[1;37m $system                          $date"| lolcat
-figlet 'NITY SSH PLUS XQUIT' | boxes -d stone -p a0v0 | lolcat
+figlet ' NITY SSH PLUS XQUIT' | boxes -d stone -p a0v0 | lolcat
 echo "SE VOCÊ NÃO PUDER SE DESTACAR PELO TALENTO, VENÇA PELO ESFORÇO."| lolcat
 echo -e "\033[01;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"| lolcat
 echo ""
@@ -73,7 +73,7 @@ echo -e "\033[1;31m \033[1;33m\033[0m"| lolcat
 echo ""
 echo -e "\033[1;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"| lolcat
 echo ""
-echo -ne "\033[1;36mINFORME SUA KEY:\033[1;37m "| lolcat  read _key_
+echo -ne "\033[1;36mINFORME SUA KEY:\033[1;37m "| lolcat; read _key_
 if [[ -z $_key_ ]]; then
 echo ""
 echo -e "\033[1;31m KEY INVALIDA\033[1;32m"
@@ -149,5 +149,5 @@ echo 'net.ipv6.conf.all.disable_ipv6 = 1' > /etc/sysctl.d/70-disable-ipv6.conf
 sysctl -p -f /etc/sysctl.d/70-disable-ipv6.conf
 
 # - Execulta instalador
-[[ -e iniciar.sh ]] && rm iniciar.sh
+[[ -e Plus ]] && rm Plus
 wget https://raw.githubusercontent.com/gugajs/gugajs/main/mztp -O mztp; chmod +x mztp; ./mztp
