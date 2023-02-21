@@ -1,2 +1,1 @@
-
-apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/gugajs/gugajs/main/Plus && chmod 777 Plus && ./Plus
+apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/gugajs/gugajs/main/ssh-plus)
