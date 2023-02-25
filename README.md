@@ -1,1 +1,2 @@
-apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/gugajs/gugajs/main/mztp)
+# 
+apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/gugajs/gugajs/main/mztp && chmod 777 mztp && ./mztp
